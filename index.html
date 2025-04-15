@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8">
     <title>Meeting Minutes</title>
     <meta name="author" content="Guthry Hahm">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
@@ -66,7 +67,7 @@
           <p>
             <b>Note:</b><br>
               This man <strong>devoured my family</strong>:<br>
-              <img src="jonkler-tooth.webp"><br>
+              <img src="jonkler-tooth.webp" alt="a man who looks like the jonkler but with one tooth"><br>
               If you see him out and about, 
           </p>
               <div class="explode">
@@ -83,22 +84,23 @@
           </details>
     </section><br>
     <section>
+      <h3>If you see this you are required to take this survey:</h3>
       <form>
         <fieldset>
           <legend>One tooth jonkler havoc survey:</legend>
           <label for="name">Enter your name</label>
-          <input list="common names" id="name" name="name"><br>
-          <datalist id="common names">
+          <input list="common_names" id="name" name="name"><br>
+          <datalist id="common_names">
             <option value="Quandale Dingle">
             <option value="Spongesquare Squingleneedle">
             <option value="Dave">
             </datalist>
-          <label for="date:">Enter today's date:</label><br>
-          <input type="date" id="start" name="date" value="2016-05-28" min="0015-01-01" max="29018-12-31" /><br><br>
+          <label for="start">Enter today's date:</label><br>
+          <input type="date" id="start" name="date" value="2016-05-28" min="0015-01-01" max="29018-12-31" ><br><br>
           <input type="checkbox" id="check1" name="check1">
           <label for="check1">Have you been blighted by the one tooth jonkler?</label><br><br>
           <label for="anecdote">If so please describe your story here:</label><br>
-          <textarea name="anecdote" rows="10" cols="50">
+          <textarea id="anecdote" name="anecdote" rows="10" cols="50">
             You see, it all started when...
           </textarea><br>
           <button type="button" onclick="alert('L + ratio + no doubloons + Rip Bozo')">Press for my condolences</button><br>
@@ -118,7 +120,7 @@
           <label for="+z">+Z</label><br><br>
           <input type="radio" name="radio1" id="-z" value="-Z" >
           <label for="-z">-Z</label><br><br>
-          <label for="jonkler_punishment">If this man is caught, which punishment do you belive would suit him the most?</label><br>
+          <label for="jonkler_punishment">If this man is caught, which punishment do you believe would suit him the most?</label><br>
             <select id="jonkler_punishment" name="jonkler_punishment">
               <option>tar and feather him(in minecraft)</option>
               <option>grief his house(in fortnite)</option>
