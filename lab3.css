@@ -3,9 +3,24 @@ body {
     color:bisque; /*Text*/
 
 }
+hr {
+    border-color:bisque;
+}
 
 
 #audio-clip {
-    display:block;
+    display:flex;
     margin:auto;
+}
+.fancy-box {
+  display:block;
+  border-width: 2px;
+  border-style: solid;
+  border-color:bisque;
+  border-radius: 1px;
+
+  padding: 5px;
+
+  max-width: 100%;
+  background-color: #404;
 }
