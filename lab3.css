@@ -3,3 +3,9 @@ body {
     color:bisque; /*Text*/
 
 }
+
+
+#audio-clip {
+    display:block;
+    margin:auto;
+}
