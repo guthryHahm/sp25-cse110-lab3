@@ -1,10 +1,22 @@
+
 body {
     background-color: #505;
     color:bisque; /*Text*/
-
 }
 hr {
     border-color:bisque;
+}
+
+/* <weight>: Use a value from 300 to 900
+ */
+
+* {
+  font-family: "Merriweather", Times ,serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
 
 
@@ -12,6 +24,7 @@ hr {
     display:flex;
     margin:auto;
 }
+
 .fancy-box {
   display:block;
   border-width: 2px;
@@ -22,5 +35,7 @@ hr {
   padding: 5px;
 
   max-width: 100%;
+  height: fit-content;
+  max-height: fit-content;
   background-color: #404;
 }
