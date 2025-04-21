@@ -19,9 +19,53 @@ hr {
     "wdth" 100;
 }
 
+#survey-grid {
+    padding: 10px 10px 10px 10px;
+    display: grid;
+    width: fit-content;
+    grid-template-columns: 50% 50% ;
+}
 
-#audio-clip {
+h3 + form {
+    display: flex;
+    justify-content: center;
+}
+
+div > textarea{
+    background-color: #606;
+    color: bisque;
+    border-color: bisque;
+    border-style:hidden;
+    border-radius: 5px;
+}
+
+fieldset input{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #606;
+    border-color: bisque;
+    color: bisque;
+    border-style: solid;
+}
+
+input[type="button"]:hover,input[type="submit"]:hover,button:hover {
+    background-color: #303;
+}
+
+input ~ button {
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: bisque;
+    background-color: #606;
+    border-color: bisque;
+    border-style: solid;
+}
+
+#media {
     display:flex;
+    flex-direction:column;
+    align-items:center;
     margin:auto;
 }
 

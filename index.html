@@ -81,7 +81,7 @@
           <hr>
           <div class="fancy-box">
             <details>
-              <summary>Other heinous taken by <b>One tooth jonkler man</b></summary>
+              <summary>Other heinous actions taken by <b>One tooth jonkler man</b></summary>
               <ul>
                 <li>Out pizza'd the hut</li>
                 <li>leaked Australian national secrets to the emus during the great emu war</li>
@@ -93,56 +93,64 @@
     <section>
       <h3>If you see this you are required to take this survey:</h3>
       <form>
-        <fieldset>
+        <fieldset class="fancy-box" id ="survey-grid">
           <legend>One tooth jonkler havoc survey:</legend>
-          <label for="name">Enter your name</label>
+          <div>
+          <label for="name">Enter your name: </label>
           <input list="common_names" id="name" name="name"><br>
           <datalist id="common_names">
             <option value="Quandale Dingle">
             <option value="Spongesquare Squingleneedle">
             <option value="Dave">
-            </datalist>
-          <label for="start">Enter today's date:</label><br>
-          <input type="date" id="start" name="date" value="2016-05-28" min="2016-05-27" max="2016-05-29" ><br><br>
-          <input type="checkbox" id="check1" name="check1">
-          <label for="check1">Have you been blighted by the one tooth jonkler?</label><br><br>
-          <label for="anecdote">If so please describe your story here:</label><br>
-          <textarea id="anecdote" name="anecdote" rows="10" cols="50">
-            You see, it all started when...
-          </textarea><br>
-          <button type="button" onclick="alert('L + ratio + no doubloons + Rip Bozo')">Press for my condolences</button><br>
-          <input type="button" value="Hey!" onclick="alert('jkjk that was mean, Im sorry that happened bro')"><br>
-          <p>We have observed that the one tooth jonkler only attacks people from along the 3 directions<br>
-             described by the orthonormal basis vectors relative to the victim's rotation and coordinates, and their negations,<br>
+          </datalist>
+          <label for="start">Enter today's date: </label>
+          <input type="date" id="start" name="date" value="2016-05-28" min="2016-05-27" max="2016-05-29"><br>
+            <input type="checkbox" id="check1" name="check1">
+            <label for="check1">Have you been blighted by the one tooth jonkler?</label><br><br>
+            <label for="anecdote">If so please describe your story here:</label><br>
+            <textarea id="anecdote" name="anecdote" rows="10" cols="50">
+                                            You see, it all started when...
+                                          </textarea><br>
+            <input class="button" type="button" value="Press for my condolences" onclick="alert('L + ratio + no doubloons + Rip Bozo')">
+            <button class="button" type="button"  onclick="alert('jkjk that was mean, Im sorry that happened bro')">Hey!</button><br>
+          </div>
+          <div>
+            <p>We have observed that the one tooth jonkler only attacks people from along the 3 directions<br>
+              described by the orthonormal basis vectors relative to the victim's rotation and coordinates, and their
+              negations,<br>
               making that 6 directions total, if you were attacked, please enter from which direction: </p>
-          <input type="radio" name="radio1" id="+x" value="+x" >
-          <label for="+x">+X</label><br><br>
-          <input type="radio" name="radio1" id="-x" value="-X" >
-          <label for="-x">-X</label><br><br>
-          <input type="radio" name="radio1" id="+y" value="+Y" >
-          <label for="+y">+Y</label><br><br>
-          <input type="radio" name="radio1" id="-y" value="-Y" >
-          <label for="-y">-Y</label><br><br>
-          <input type="radio" name="radio1" id="+z" value="+Z" >
-          <label for="+z">+Z</label><br><br>
-          <input type="radio" name="radio1" id="-z" value="-Z" >
-          <label for="-z">-Z</label><br><br>
-          <label for="jonkler_punishment">If this man is caught, which punishment do you believe would suit him the most?</label><br>
-            <select id="jonkler_punishment" name="jonkler_punishment">
-              <option>tar and feather him(in minecraft)</option>
-              <option>grief his house(in fortnite)</option>
-              <option>launch him into the sun(in minecraft)</option>
-            </select><br><br>
-          <input type="submit" value="Submit Grievances" onclick="alert('We will put his man to justice')"><br>
+            <input type="radio" name="radio1" id="+x" value="+x">
+            <label for="+x">+X</label><br>
+            <input type="radio" name="radio1" id="-x" value="-X">
+            <label for="-x">-X</label><br>
+            <input type="radio" name="radio1" id="+y" value="+Y">
+            <label for="+y">+Y</label><br>
+            <input type="radio" name="radio1" id="-y" value="-Y">
+            <label for="-y">-Y</label><br>
+            <input type="radio" name="radio1" id="+z" value="+Z">
+            <label for="+z">+Z</label><br>
+            <input type="radio" name="radio1" id="-z" value="-Z">
+            <label for="-z">-Z</label><br>
+          </div>
+          <div>
+            <label for="jonkler_punishment">If this man is caught, which punishment do you believe would suit him the
+              most?</label><br>
+              <select id="jonkler_punishment" name="jonkler_punishment">
+                <option>tar and feather him(in minecraft)</option>
+                <option>grief his house(in fortnite)</option>
+                <option>launch him into the sun(in minecraft)</option>
+              </select><br><br>
+            </div>
+          <input class="button" type="submit" value="Submit Grievances" onclick="alert('We will put his man to justice')"><br>
         </fieldset>
       </form>
     </section>
-    <section>
+    <section id="media">
       <h3>Oh yea and here's my video and audio:</h3>
       <video width="241" height="429" controls>
         <source src="IMG_2862.mp4" type="video/mp4">
       </video><br>
-      <audio controls id="audio-clip">
+      <audio controls >
         <source src="IMG_2862.mp3" type="audio/mp3">
       </audio><br>
     </section>
