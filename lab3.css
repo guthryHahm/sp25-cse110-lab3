@@ -1,6 +1,7 @@
 
 body {
     --text-color: color(srgb 1 0.89 0.77);
+    --top-bar-background-color: color-mix(in srgb, black 80%, #F0F);
     background-color: #505;
     color:var(--text-color, white); /*Text*/
 }
@@ -13,7 +14,6 @@ hr {
 
 * {
   font-family: "Merriweather", Times ,serif;
-  font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
   font-variation-settings:
@@ -39,7 +39,7 @@ hr {
     left: -3px;
     display:block;
     position:fixed;
-    background-color:color-mix(in srgb, black 80%, #F0F);
+    background-color:var(--top-bar-background-color,#343);
     width: 100%;
     max-width: 100%;
     border-color: bisque;
@@ -60,15 +60,17 @@ h3 + form {
 }
 
 img {
-    transition: transform 0.3s ease;
-    @media (min-width: 1700px ) {
-        &:hover {
-        position:static;
-        transform: scaleX(700%);
-        justify-self: center;
+  transition: transform 0.3s ease;
+}
+
+@media (min-width: 1700px) {
+  img {
+    &:hover {
+      position: static;
+      transform: scaleX(700%);
+      justify-self: center;
     }
-        
-    }
+  }
 }
 
 
