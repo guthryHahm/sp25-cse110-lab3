@@ -1,7 +1,8 @@
 
 body {
+    --text-color: color(srgb 1 0.89 0.77);
     background-color: #505;
-    color:bisque; /*Text*/
+    color:var(--text-color, white); /*Text*/
 }
 hr {
     border-color:bisque;
@@ -20,7 +21,10 @@ hr {
 }
 
 #survey-grid {
-    padding: 10px 10px 10px 10px;
+    padding-top: 0.5cm;
+    padding-bottom: 0.5cm;
+    padding-left: 0.5cm;
+    padding-right: 0.5cm;
     display: grid;
     width: fit-content;
     grid-template-columns: 50% 50% ;
@@ -35,10 +39,10 @@ hr {
     left: -3px;
     display:block;
     position:fixed;
-    background-color:#303;
+    background-color:color-mix(in srgb, black 80%, #F0F);
     width: 100%;
     max-width: 100%;
-    border-color: beige;
+    border-color: bisque;
     border-style: solid;
     z-index: 1000;
 }
@@ -57,15 +61,19 @@ h3 + form {
 
 img {
     transition: transform 0.3s ease;
-    &:hover {
-    transform: scaleX(900%);
-    justify-self: center;
+    @media (min-width: 1700px ) {
+        &:hover {
+        position:static;
+        transform: scaleX(700%);
+        justify-self: center;
+    }
+        
     }
 }
 
 
 div > textarea{
-    width: 100%;
+    width:75%;
     background-color: #606;
     color: bisque;
     border-color: bisque;
@@ -130,8 +138,8 @@ input ~ button {
   border-color:bisque;
   border-radius: 1px;
 
-  padding: 5px;
 
+  padding: 1mm 1mm 1mm 1mm;
   max-width: 100%;
   height: fit-content;
   max-height: fit-content;
